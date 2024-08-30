@@ -4,18 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Cybersécurité</title>
-  <link href="[https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap](https://img.freepik.com/vecteurs-premium/fond-rouge-noir-cadenas-circuit-imprime-mot-cybersecurite-dessus_42077-16537.jpg)" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-  body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-image: url('chemin/vers/votre-image.jpg'); /* URL de votre image */
-  background-size: cover; /* L'image couvre tout l'écran */
-  background-position: center; /* L'image est centrée */
-  background-repeat: no-repeat; /* Empêche la répétition de l'image */
-  height: 100vh; /* Fixe la hauteur de l'écran à 100% de la hauteur de la fenêtre */
-}
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://img.freepik.com/vecteurs-premium/fond-rouge-noir-cadenas-circuit-imprime-mot-cybersecurite-dessus_42077-16537.jpg'); /* URL de votre image */
+      background-size: cover; /* L'image couvre tout l'écran */
+      background-position: center; /* L'image est centrée */
+      background-repeat: no-repeat; /* Empêche la répétition de l'image */
+      height: 100vh; /* Fixe la hauteur de l'écran à 100% de la hauteur de la fenêtre */
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Ajoute une ombre au texte pour le rendre lisible */
+    }
 
     header {
       text-align: center;
@@ -45,7 +47,6 @@
     p {
       font-size: 18px;
       line-height: 1.6;
-      color: #fff;
       margin-bottom: 20px;
       text-align: center;
     }
@@ -75,7 +76,7 @@
   <section id="projects">
     <h2>Mes Projets</h2>
     <ul>
-      <li><a href="#projet1">Projet 1 :Scanner de ports</a></li>
+      <li><a href="#projet1">Projet 1 : Scanner de ports</a></li>
       <li><a href="#projet2">Projet 2 : Casseur de mot de passe</a></li>
       <li><a href="#projet3">Projet 3 : Script de pentest personnalisé</a></li>
     </ul>
