@@ -6,18 +6,16 @@
   <title>Portfolio Cybersécurité</title>
   <link href="[https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap](https://img.freepik.com/vecteurs-premium/fond-rouge-noir-cadenas-circuit-imprime-mot-cybersecurite-dessus_42077-16537.jpg)" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-image: url('https://exemple.com/mon-image.jpg'); /* Remplacez par l'URL de votre image */
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 100vh;
-      color: white;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Ajoute une ombre au texte pour le rendre lisible */
-    }
+  body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('chemin/vers/votre-image.jpg'); /* URL de votre image */
+  background-size: cover; /* L'image couvre tout l'écran */
+  background-position: center; /* L'image est centrée */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  height: 100vh; /* Fixe la hauteur de l'écran à 100% de la hauteur de la fenêtre */
+}
 
     header {
       text-align: center;
@@ -49,7 +47,7 @@
       line-height: 1.6;
       color: #fff;
       margin-bottom: 20px;
-      text-align: justify;
+      text-align: center;
     }
 
     a {
