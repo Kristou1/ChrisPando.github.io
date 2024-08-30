@@ -3,13 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Portfolio en Cybersécurité</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Lien vers votre fichier CSS -->
+  <title>Portfolio Cybersécurité</title>
+  <link href="[https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap](https://img.freepik.com/vecteurs-premium/fond-rouge-noir-cadenas-circuit-imprime-mot-cybersecurite-dessus_42077-16537.jpg)" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://exemple.com/mon-image.jpg'); /* Remplacez par l'URL de votre image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Ajoute une ombre au texte pour le rendre lisible */
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5); /* Ajoute une transparence pour mieux lire le texte */
+    }
+
+    h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    section {
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent pour les sections */
+      border-radius: 8px;
+      max-width: 800px;
+    }
+
+    h2 {
+      color: #fff;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #fff;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    a {
+      color: #e74c3c;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Bienvenue sur mon Portfolio en Cybersécurité</h1>
-    <p>Je suis <strong>Nom Prénom</strong>, un passionné de cybersécurité en reconversion. Ce portfolio présente mes compétences, mes projets et mon parcours.</p>
+    <p>Je suis <strong>PANDOSY Christophe</strong>, un passionné de cybersécurité en reconversion. Ce portfolio présente mes compétences, mes projets et mon parcours.</p>
   </header>
 
   <section id="about">
@@ -21,9 +77,9 @@
   <section id="projects">
     <h2>Mes Projets</h2>
     <ul>
-      <li><a href="#projet1">Projet 1 : Audit de Sécurité d'un Réseau</a></li>
-      <li><a href="#projet2">Projet 2 : Analyse des Menaces en Cybersécurité</a></li>
-      <li><a href="#projet3">Projet 3 : Déploiement d'un Pare-feu</a></li>
+      <li><a href="#projet1">Projet 1 :Scanner de ports</a></li>
+      <li><a href="#projet2">Projet 2 : Casseur de mot de passe</a></li>
+      <li><a href="#projet3">Projet 3 : Script de pentest personnalisé</a></li>
     </ul>
   </section>
 </body>
