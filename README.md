@@ -75,7 +75,7 @@
   <section id="projects">
     <h2>Mes Projets</h2>
     <ul>
-      <li><a href="Chrispando.github.io/Scanner" download>Projet 1 : Scanner de ports</a></li>
+      <li><a href="https://kristou1.github.io/Chrispando.github.io/Scanner" download>Projet 1 : Scanner de ports</a></li>
       <li><a href="#projet2">Projet 2 : Casseur de mot de passe</a></li>
       <li><a href="#projet3">Projet 3 : Script de pentest personnalisé</a></li>
     </ul>
