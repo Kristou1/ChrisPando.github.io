@@ -9,7 +9,7 @@
       font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
-      background-image: url('https://img.freepik.com/vecteurs-premium/fond-rouge-noir-cadenas-circuit-imprime-mot-cybersecurite-dessus_42077-16537.jpg'); /* URL de votre image */
+      background-image: url('https://img.freepik.com/vecteurs-premium/fond-rouge-noir-cadenas-circuit-imprime-mot-cybersecurite-dessus_42077-16537.jpg'); /* URL de l'image */
       background-size: cover; /* L'image couvre tout l'écran */
       background-position: center; /* L'image est centrée */
       background-repeat: no-repeat; /* Empêche la répétition de l'image */
@@ -68,7 +68,7 @@
 
   <section id="about">
     <h2>À propos de moi</h2>
-    <p>Avec un intérêt croissant pour la sécurité des systèmes d'information, j'ai décidé de me reconvertir dans la cybersécurité après plusieurs années en tant que [votre ancien métier].</p>
+    <p>Avec un intérêt croissant pour la sécurité des systèmes d'information, j'ai décidé de me reconvertir dans la cybersécurité après plusieurs années en tant que comptable.</p>
     <p>J'ai acquis des compétences clés comme l'analyse des vulnérabilités, la gestion des incidents de sécurité, et la mise en place de solutions de sécurité.</p>
   </section>
 
