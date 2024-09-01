@@ -72,11 +72,11 @@
     <p>J'ai acquis des compétences clés comme l'analyse des vulnérabilités, la gestion des incidents de sécurité, et la mise en place de solutions de sécurité.</p>
   </section>
 
-  <section id="projects">
+ <section id="projects">
   <h2>Mes Projets</h2>
   <ul>
-    <li><a href="Scanner.txt" download>Projet 1 : Scanner de ports</a></li>
-    <li><a href="ScannerVulnWeb.py" download>Projet 2 : Scanner de vulnérabilités Web</a></li>
+    <li><a href="scripts/scanner_de_ports.py" download>Projet 1 : Scanner de ports</a></li>
+    <li><a href="scripts/casseur_de_mot_de_passe.py" download>Projet 2 : Scanner de vulnérabilités web</a></li>
     <li><a href="scripts/script_de_pentest.py" download>Projet 3 : Script de pentest personnalisé</a></li>
   </ul>
 </section>
