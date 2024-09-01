@@ -75,7 +75,7 @@
   <section id="projects">
     <h2>Mes Projets</h2>
     <ul>
-      <li><a href="Scanner.txt" download>Projet 1 : Scanner de ports</a></li>
+      <li><a href="ScannScannerVulnWeb.txter.txt" download>Projet 1 : Scanner de ports</a></li>
       <li><a href="ScannerVulnWeb.txt" download>Projet 2 : Scanner de vulnérabilités Web</a></li>
       <li><a href="#projet3">Projet 3 : Script de pentest personnalisé</a></li>
     </ul>
