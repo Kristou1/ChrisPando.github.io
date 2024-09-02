@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet 1 : Scanner de ports</title>
+    <!-- Lien vers le style pour la coloration syntaxique -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        pre {
+            background-color: #2d2d2d;
+            padding: 20px;
+            border-radius: 8px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Projet 1 : Scanner de ports</h1>
+    <pre><code class="language-bash">
+#!/bin/bash
+
+# Mon scanner de ports optimisé
+ip_cible=$1
+
+# Liste des ports communs à scanner par défaut
+ports_communs=(21 22 25 53 80 110 443 445 8080 3306)
+
+# Fonction de scan de port
+scan_port() {
+    (echo > /dev/tcp/$1/$2) >/dev/null 2>&1 && echo "Port $2 ouvert sur $1" || echo "Port $2 fermé sur $1"
+}
+
+# Validation des paramètres
+if [ $# -eq 1 ]; then
+    for port in "${ports_communs[@]}"; do
+        scan_port $ip_cible $port &
+    done
+    wait
+elif [ $# -eq 3 ]; then
+    for port in $(seq $2 $3); do
+        scan_port $ip_cible $port &
+    done
+    wait
+else
+    echo "Usage : $0 <IP cible> [port_debut port_fin]"
+    exit 1
+fi
+
+import socket
+
+def scan_ports(target, ports):
+    for port in ports:
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.settimeout(1)
+        result = sock.connect_ex((target, port))
+        if result == 0:
+            print(f"Port {port} is open")
+        else:
+            print(f"Port {port} is closed")
+        sock.close()
+    </code></pre>
+
+    <!-- Lien vers Prism.js pour la coloration syntaxique -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-python.min.js"></script>
+</body>
+</html>
