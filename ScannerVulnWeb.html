@@ -1,3 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet 1 : Scanner de ports</title>
+    <!-- Lien vers le style pour la coloration syntaxique -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        pre {
+            background-color: #2d2d2d;
+            padding: 20px;
+            border-radius: 8px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Projet 1 : Scanner de ports</h1>
+    <pre><code class="language-python">
 import requests
 import json
 import logging
@@ -89,3 +121,41 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
     main(args.site, args.liste_mots_cles)
+import socket
+
+def scan_ports(target, ports):
+    for port in ports:
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.settimeout(1)
+        result = sock.connect_ex((target, port))
+        if result == 0:
+            print(f"Port {port} is open")
+        else:
+            print(f"Port {port} is closed")
+        sock.close()
+    </code></pre>
+
+    <!-- Lien vers Prism.js pour la coloration syntaxique -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-python.min.js"></script>
+</body>
+</html>
+2. Ajouter du code avec coloration syntaxique
+Prism.js est utilisé ici pour la coloration syntaxique.
+Le code est inclus dans une balise <pre><code> avec une classe spécifique pour le langage de programmation, par exemple language-python pour du Python.
+3. Créer d'autres pages pour les autres projets
+Répétez l'étape précédente pour chaque projet, en créant des fichiers comme casseur_de_mot_de_passe.html et script_de_pentest.html.
+Changez le code et le titre dans chaque fichier pour qu'ils correspondent au projet respectif.
+4. Mettre à jour la page principale (index.html)
+Ensuite, modifiez votre page principale index.html pour lier chaque projet à sa nouvelle page dédiée :
+
+html
+Copier le code
+<section id="projects">
+    <h2>Mes Projets</h2>
+    <ul>
+        <li><a href="scanner_de_ports.html">Projet 1 : Scanner de ports</a></li>
+        <li><a href="casseur_de_mot_de_passe.html">Projet 2 : Casseur de mot de passe</a></li>
+        <li><a href="script_de_pentest.html">Projet 3 : Script de pentest personnalisé</a></li>
+    </ul>
+</section>
