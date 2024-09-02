@@ -140,22 +140,3 @@ def scan_ports(target, ports):
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-python.min.js"></script>
 </body>
 </html>
-2. Ajouter du code avec coloration syntaxique
-Prism.js est utilisé ici pour la coloration syntaxique.
-Le code est inclus dans une balise <pre><code> avec une classe spécifique pour le langage de programmation, par exemple language-python pour du Python.
-3. Créer d'autres pages pour les autres projets
-Répétez l'étape précédente pour chaque projet, en créant des fichiers comme casseur_de_mot_de_passe.html et script_de_pentest.html.
-Changez le code et le titre dans chaque fichier pour qu'ils correspondent au projet respectif.
-4. Mettre à jour la page principale (index.html)
-Ensuite, modifiez votre page principale index.html pour lier chaque projet à sa nouvelle page dédiée :
-
-html
-Copier le code
-<section id="projects">
-    <h2>Mes Projets</h2>
-    <ul>
-        <li><a href="scanner_de_ports.html">Projet 1 : Scanner de ports</a></li>
-        <li><a href="casseur_de_mot_de_passe.html">Projet 2 : Casseur de mot de passe</a></li>
-        <li><a href="script_de_pentest.html">Projet 3 : Script de pentest personnalisé</a></li>
-    </ul>
-</section>
