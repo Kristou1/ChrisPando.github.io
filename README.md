@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -66,23 +67,28 @@
     <p>Je suis <strong>PANDOSY Christophe</strong>, un passionné de cybersécurité en reconversion. Ce portfolio présente mes compétences, mes projets et mon parcours.</p>
   </header>
 
+  <!-- Section À propos -->
   <section id="about">
     <h2>À propos de moi</h2>
     <p>Avec un intérêt croissant pour la sécurité des systèmes d'information, j'ai décidé de me reconvertir dans la cybersécurité après plusieurs années en tant que comptable.</p>
     <p>J'ai acquis des compétences clés comme l'analyse des vulnérabilités, la gestion des incidents de sécurité, et la mise en place de solutions de sécurité.</p>
   </section>
 
- <section id="about">
+  <!-- Section Certifications -->
+  <section id="certifications">
     <h2>Mes certifications</h2>
     <p>Août 2023 - Certification TOSA Cybercitizen.</p>
     <p>Août 2023 - Certification TOSA DigComp.</p>
   </section>
   
- <section id="projects">
-  <h2>Mes Projets</h2>
-  <ul>
-    <li><a href="Scanner_de_ports.html" target="_blank">Projet 1 : Scanner de ports</a></li>
-    <li><a href="ScannerVulnWeb.html" target="_blank">Projet 2 : Scanner de vulnérabilités web</a></li>
-    <li><a href="Pentest_perso.html" target="_blank">Projet 3 : Script de pentest personnaliser</a></li>
-  </ul>
-</section>
+  <!-- Section Projets -->
+  <section id="projects">
+    <h2>Mes Projets</h2>
+    <ul>
+      <li><a href="Scanner_de_ports.html" target="_blank" rel="noopener noreferrer">Projet 1 : Scanner de ports</a></li>
+      <li><a href="ScannerVulnWeb.html" target="_blank" rel="noopener noreferrer">Projet 2 : Scanner de vulnérabilités web</a></li>
+      <li><a href="Pentest_perso.html" target="_blank" rel="noopener noreferrer">Projet 3 : Script de pentest personnalisé</a></li>
+    </ul>
+  </section>
+</body>
+</html>
