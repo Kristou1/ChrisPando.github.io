@@ -72,7 +72,7 @@
     <p>J'ai acquis des compétences clés comme l'analyse des vulnérabilités, la gestion des incidents de sécurité, et la mise en place de solutions de sécurité.</p>
   </section>
 
- <section id="certifications">
+ <section id="about">
     <h2>Mes certifications</h2>
     <p>Août 2023 - Certification TOSA Cybercitizen.</p>
     <p>Août 2023 - Certification TOSA DigComp.</p>
