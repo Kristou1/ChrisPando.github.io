@@ -9,19 +9,19 @@
       font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
-      background-image: url('https://img.freepik.com/vecteurs-premium/fond-rouge-noir-cadenas-circuit-imprime-mot-cybersecurite-dessus_42077-16537.jpg'); /* URL de l'image */
-      background-size: cover; /* L'image couvre tout l'écran */
-      background-position: center; /* L'image est centrée */
-      background-repeat: no-repeat; /* Empêche la répétition de l'image */
-      height: 100vh; /* Fixe la hauteur de l'écran à 100% de la hauteur de la fenêtre */
+      background-image: url('https://img.freepik.com/vecteurs-premium/fond-rouge-noir-cadenas-circuit-imprime-mot-cybersecurite-dessus_42077-16537.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
       color: #fff;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Ajoute une ombre au texte pour le rendre lisible */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     }
 
     header {
       text-align: center;
       padding: 20px;
-      background-color: rgba(0, 0, 0, 0.5); /* Ajoute une transparence pour mieux lire le texte */
+      background-color: rgba(0, 0, 0, 0.5);
     }
 
     h1 {
@@ -32,7 +32,7 @@
     section {
       margin: 20px auto;
       padding: 20px;
-      background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent pour les sections */
+      background-color: rgba(0, 0, 0, 0.7);
       border-radius: 8px;
       max-width: 800px;
     }
@@ -43,7 +43,7 @@
       text-align: center;
     }
 
-    p {
+    p, ul {
       font-size: 18px;
       line-height: 1.6;
       margin-bottom: 20px;
@@ -57,6 +57,29 @@
 
     a:hover {
       text-decoration: underline;
+    }
+
+    /* Style pour le contenu déroulant */
+    .content-hidden {
+      display: none;
+      max-height: 300px; /* Hauteur maximale avec défilement */
+      overflow-y: auto; /* Ajoute une réglette si nécessaire */
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    button {
+      background-color: #e74c3c;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #c0392b;
     }
   </style>
 </head>
@@ -73,21 +96,39 @@
     <p>J'ai acquis des compétences clés comme l'analyse des vulnérabilités, la gestion des incidents de sécurité, et la mise en place de solutions de sécurité.</p>
   </section>
 
-  <!-- Section Certifications -->
+  <!-- Section Certifications avec un bouton pour afficher/masquer le contenu -->
   <section id="certifications">
-    <h2>Mes certifications</h2>
-    <p>Août 2023 - Certification TOSA Cybercitizen.</p>
-    <p>Août 2023 - Certification TOSA DigComp.</p>
+    <h2>Mes certifications <button onclick="toggleContent('certifications-content')">Cliquer ici</button></h2>
+    <div id="certifications-content" class="content-hidden">
+      <p>Août 2023 - Certification TOSA Cybercitizen.</p>
+      <p>Août 2023 - Certification TOSA DigComp.</p>
+      <!-- Ajoutez d'autres certifications si nécessaire -->
+    </div>
   </section>
   
-  <!-- Section Projets -->
+  <!-- Section Projets avec un bouton pour afficher/masquer le contenu -->
   <section id="projects">
-    <h2>Mes Projets</h2>
-    <ul>
-      <li><a href="Scanner_de_ports.html" target="_blank" rel="noopener noreferrer">Projet 1 : Scanner de ports</a></li>
-      <li><a href="ScannerVulnWeb.html" target="_blank" rel="noopener noreferrer">Projet 2 : Scanner de vulnérabilités web</a></li>
-      <li><a href="Pentest_perso.html" target="_blank" rel="noopener noreferrer">Projet 3 : Script de pentest personnalisé</a></li>
-    </ul>
+    <h2>Mes Projets <button onclick="toggleContent('projects-content')">Cliquer ici</button></h2>
+    <div id="projects-content" class="content-hidden">
+      <ul>
+        <li><a href="Scanner_de_ports.html" target="_blank" rel="noopener noreferrer">Projet 1 : Scanner de ports</a></li>
+        <li><a href="ScannerVulnWeb.html" target="_blank" rel="noopener noreferrer">Projet 2 : Scanner de vulnérabilités web</a></li>
+        <li><a href="Pentest_perso.html" target="_blank" rel="noopener noreferrer">Projet 3 : Script de pentest personnalisé</a></li>
+        <!-- Ajoutez d'autres projets si nécessaire -->
+      </ul>
+    </div>
   </section>
+
+  <script>
+    // Fonction pour afficher/masquer le contenu
+    function toggleContent(id) {
+      const content = document.getElementById(id);
+      if (content.style.display === 'block') {
+        content.style.display = 'none';
+      } else {
+        content.style.display = 'block';
+      }
+    }
+  </script>
 </body>
 </html>
