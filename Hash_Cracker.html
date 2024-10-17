@@ -1,1 +1,90 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet 3 : Script de pentest personnalisé</title>
+    <!-- Lien vers le style pour la coloration syntaxique -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        pre {
+            background-color: #2d2d2d;
+            padding: 20px;
+            border-radius: 8px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Projet 3 : Script de pentest personnalisé</h1>
+    <pre><code class="language-bash">
+      
+import hashlib
+import pyfiglet
+import argparse
+
+# Afficher une bannière
+ascii_banner = pyfiglet.figlet_format("HASH CRACKER")
+print(ascii_banner)
+
+def hash_password(password, hash_type):
+    """Hache un mot de passe en fonction du type de hachage fourni."""
+    if hash_type == 'md5':
+        return hashlib.md5(password.encode()).hexdigest()
+    elif hash_type == 'sha1':
+        return hashlib.sha1(password.encode()).hexdigest()
+    elif hash_type == 'sha256':
+        return hashlib.sha256(password.encode()).hexdigest()
+    else:
+        raise ValueError("Unsupported hash type.")
+
+def main(wordlist_location, hash_input, hash_type):
+    """Principale fonction de craquage de mot de passe."""
+    try:
+        with open(wordlist_location, 'r') as file:
+            for line_number, line in enumerate(file.readlines(), start=1):
+                password = line.strip()
+                hashed_pass = hash_password(password, hash_type)
+
+                if hashed_pass == hash_input:
+                    print(f'Found password: {password} (line: {line_number})')
+                    return True
+
+            print("Password not found in the provided wordlist.")
+            return False
+
+    except FileNotFoundError:
+        print(f"Error: The file '{wordlist_location}' does not exist.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+if __name__ == "__main__":
+    # Configuration des arguments de ligne de commande
+    parser = argparse.ArgumentParser(description='MD5/SHA Hash Cracker')
+    parser.add_argument('wordlist', help='Location of the wordlist file')
+    parser.add_argument('hash', help='Hash to be cracked')
+    parser.add_argument('--type', choices=['md5', 'sha1', 'sha256'], default='md5',
+                        help='Type of hash to crack (default: md5)')
+
+    args = parser.parse_args()
+    main(args.wordlist, args.hash, args.type)
+    </code></pre>
+
+    <!-- Lien vers Prism.js pour la coloration syntaxique -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-python.min.js"></script>
+</body>
+</html>
