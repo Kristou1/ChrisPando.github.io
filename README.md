@@ -114,6 +114,7 @@
         <li><a href="Scanner_de_ports.html" target="_blank" rel="noopener noreferrer">Projet 1 : Scanner de ports</a></li>
         <li><a href="ScannerVulnWeb.html" target="_blank" rel="noopener noreferrer">Projet 2 : Scanner de vulnérabilités web</a></li>
         <li><a href="Pentest_perso.html" target="_blank" rel="noopener noreferrer">Projet 3 : Script de pentest personnalisé</a></li>
+        <li><a href="Hash_Cracker.html" target="_blank" rel="noopener noreferrer">Projet 4 : Cracker de Hash</a></li>
         <!-- Ajoutez d'autres projets si nécessaire -->
       </ul>
     </div>
