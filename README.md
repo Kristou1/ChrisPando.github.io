@@ -102,6 +102,7 @@
     <div id="certifications-content" class="content-hidden">
       <p>Août 2023 - Certification TOSA Cybercitizen.</p>
       <p>Août 2023 - Certification TOSA DigComp.</p>
+      <p>Février 2024 - Certification M2I - Sécurité Pentesting.</p>
       <!-- Ajoutez d'autres certifications si nécessaire -->
     </div>
   </section>
