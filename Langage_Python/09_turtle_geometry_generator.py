@@ -99,6 +99,15 @@ def dessiner_rosace():
         left(angle)
 
 
+def dessiner_fleur():
+    rayon = demander_entier("le rayon des pétales")
+    for _ in range(12):
+        circle(rayon, 60)
+        left(120)
+        circle(rayon, 60)
+        left(150)
+        
+
 def demander_recommencer():
     """Demande à l'utilisateur s'il souhaite recommencer."""
     while True:
@@ -164,12 +173,13 @@ def main():
             "9 - dessiner une spirale carrée\n"
             "10 - dessiner une spirale\n"
             "11 - dessiner une rosace\n"
-            "12 - dessin libre\n"
-            "13 - effacer l'écran\n"
-            "14 - changer la couleur\n"
-            "15 - changer l'épaisseur\n"
-            "16 - lever le stylo\n"
-            "17 - reposer le stylo\n"
+            "12 - dessiner une fleur\n"
+            "13 - dessin libre\n"
+            "14 - effacer l'écran\n"
+            "15 - changer la couleur\n"
+            "16 - changer l'épaisseur\n"
+            "17 - lever le stylo\n"
+            "18 - reposer le stylo\n"
             "Votre choix : "
         ).strip()
         
@@ -207,6 +217,9 @@ def main():
             dessiner_rosace()
         
         elif choix == "12":
+            dessiner_fleur()
+        
+        elif choix == "13":
             nombre = demander_entier("nombre")
             distance = demander_entier("distance")
             angle = demander_entier("angle de rotation")
@@ -215,13 +228,13 @@ def main():
                 forward(distance)
                 left(angle)
                 
-        elif choix == "13":
+        elif choix == "14":
             clear()
             home()
             
             continue
             
-        elif choix == "14":
+        elif choix == "15":
             couleurs = {
                 "1": "red",
                 "2": "yellow",
@@ -245,7 +258,7 @@ def main():
             
             continue
                 
-        elif choix == "15":
+        elif choix == "16":
             while True:
                 try:
                     epaisseur = int(input("Saisissez un nombre entre 1 et 6 : "))
@@ -261,18 +274,18 @@ def main():
             
             continue
                     
-        elif choix == "16":
+        elif choix == "17":
             penup()
             
             continue
             
-        elif choix == "17":
+        elif choix == "18":
             pendown()
             
             continue
                 
         else:
-            print("Choix invalide : saisissez un nombre entre '1' et '17'.")
+            print("Choix invalide : saisissez un nombre entre '1' et '18'.")
             continue
         
         if not demander_recommencer():
